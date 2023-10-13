@@ -1,0 +1,10 @@
+D:\Belgeler\BİLGİSAYAR PROGRAMCILIĞI\GÖRSEL PROGRAMLAMA\formhafta2\bin\Debug\formhafta2.exe.config
+D:\Belgeler\BİLGİSAYAR PROGRAMCILIĞI\GÖRSEL PROGRAMLAMA\formhafta2\bin\Debug\formhafta2.exe
+D:\Belgeler\BİLGİSAYAR PROGRAMCILIĞI\GÖRSEL PROGRAMLAMA\formhafta2\bin\Debug\formhafta2.pdb
+D:\Belgeler\BİLGİSAYAR PROGRAMCILIĞI\GÖRSEL PROGRAMLAMA\formhafta2\obj\Debug\formhafta2.csproj.AssemblyReference.cache
+D:\Belgeler\BİLGİSAYAR PROGRAMCILIĞI\GÖRSEL PROGRAMLAMA\formhafta2\obj\Debug\formhafta2.Form1.resources
+D:\Belgeler\BİLGİSAYAR PROGRAMCILIĞI\GÖRSEL PROGRAMLAMA\formhafta2\obj\Debug\formhafta2.Properties.Resources.resources
+D:\Belgeler\BİLGİSAYAR PROGRAMCILIĞI\GÖRSEL PROGRAMLAMA\formhafta2\obj\Debug\formhafta2.csproj.GenerateResource.cache
+D:\Belgeler\BİLGİSAYAR PROGRAMCILIĞI\GÖRSEL PROGRAMLAMA\formhafta2\obj\Debug\formhafta2.csproj.CoreCompileInputs.cache
+D:\Belgeler\BİLGİSAYAR PROGRAMCILIĞI\GÖRSEL PROGRAMLAMA\formhafta2\obj\Debug\formhafta2.exe
+D:\Belgeler\BİLGİSAYAR PROGRAMCILIĞI\GÖRSEL PROGRAMLAMA\formhafta2\obj\Debug\formhafta2.pdb
