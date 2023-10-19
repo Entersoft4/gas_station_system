@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace formhafta2
 {
@@ -16,7 +17,32 @@ namespace formhafta2
         public Form1()
         {
             InitializeComponent();
+            //İlk önce lbox>draw mode>owner draw fixed olacak şekilde ayarlanacak.
+            /*lbox1.BackColor = Color.White;
+            lbox1.DrawMode = DrawMode.OwnerDrawFixed;
+            lbox1.DrawItem += new DrawItemEventHandler(lbox1_DrawItem);*/
         }
+        // + olunca yeşil, - olunca kırmızı yazı olacak şekilde ayarlanacak.
+        /*void lbox1_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            e.DrawBackground();
+            Brush myBrush = Brushes.White;
+
+            lbox1.SelectedValue = ((ListBox)sender).Items[e.Index].ToString()[0];
+            if (lbox1.SelectedValue == "-")
+            {
+                myBrush = Brushes.Red;
+            }
+            else
+            {
+                myBrush = Brushes.Green;
+            }
+
+            e.Graphics.DrawString(((ListBox)sender).Items[e.Index].ToString(),
+            e.Font, myBrush, e.Bounds, StringFormat.GenericDefault);
+
+            e.DrawFocusRectangle();
+        }*/
         double kasa = 50000;
         static double limit=10000;
         double d_benzin = limit, d_dizel = limit, d_lpg = limit;
@@ -24,6 +50,16 @@ namespace formhafta2
         double tutar, miktar;
 
         private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_2(object sender, EventArgs e)
         {
 
         }
@@ -74,6 +110,7 @@ namespace formhafta2
                                 if (d_benzin+miktar <= limit)
                                 {
                                     kasa -= tutar;
+                                    lbox1.Items.Add(" - " + tutar);
                                     d_benzin += miktar;
                                 }
                                 else
@@ -103,6 +140,7 @@ namespace formhafta2
                                 if (d_benzin + miktar <= limit)
                                 {
                                     kasa -= tutar;
+                                    lbox1.Items.Add(" - " + tutar);
                                     d_benzin += miktar;
                                 }
                                 else
@@ -137,6 +175,7 @@ namespace formhafta2
                             if (d_benzin - miktar > 0)
                             {
                                 kasa += tutar;
+                                lbox1.Items.Add(" + " + tutar);
                                 d_benzin -= miktar;
                             }
                             else
@@ -159,6 +198,7 @@ namespace formhafta2
                             if (d_benzin - miktar > 0)
                             {
                                 kasa += tutar;
+                                lbox1.Items.Add(" + " + tutar);
                                 d_benzin -= miktar;
                             }
                             else
@@ -197,6 +237,7 @@ namespace formhafta2
                                 if (d_dizel + miktar <= limit)
                                 {
                                     kasa -= tutar;
+                                    lbox1.Items.Add(" - " + tutar);
                                     d_dizel += miktar;
                                 }
                                 else
@@ -226,6 +267,7 @@ namespace formhafta2
                                 if (d_dizel + miktar <= limit)
                                 {
                                     kasa -= tutar;
+                                    lbox1.Items.Add(" - " + tutar);
                                     d_dizel += miktar;
                                 }
                                 else
@@ -260,6 +302,7 @@ namespace formhafta2
                             if (d_dizel - miktar > 0)
                             {
                                 kasa += tutar;
+                                lbox1.Items.Add(" + " + tutar);
                                 d_dizel -= miktar;
                             }
                             else
@@ -282,6 +325,7 @@ namespace formhafta2
                             if (d_dizel - miktar > 0)
                             {
                                 kasa += tutar;
+                                lbox1.Items.Add(" + " + tutar);
                                 d_dizel -= miktar;
                             }
                             else
@@ -320,6 +364,7 @@ namespace formhafta2
                                 if (d_lpg + miktar <= limit)
                                 {
                                     kasa -= tutar;
+                                    lbox1.Items.Add(" - " + tutar);
                                     d_lpg += miktar;
                                 }
                                 else
@@ -349,6 +394,7 @@ namespace formhafta2
                                 if (d_lpg + miktar <= limit)
                                 {
                                     kasa -= tutar;
+                                    lbox1.Items.Add(" - " + tutar);
                                     d_lpg += miktar;
                                 }
                                 else
@@ -383,6 +429,7 @@ namespace formhafta2
                             if (d_lpg - miktar > 0)
                             {
                                 kasa += tutar;
+                                lbox1.Items.Add(" + " + tutar);
                                 d_lpg -= miktar;
                             }
                             else
@@ -405,6 +452,7 @@ namespace formhafta2
                             if (d_lpg - miktar > 0)
                             {
                                 kasa += tutar;
+                                lbox1.Items.Add(" + " + tutar);
                                 d_lpg -= miktar;
                             }
                             else

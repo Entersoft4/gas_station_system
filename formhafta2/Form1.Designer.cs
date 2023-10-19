@@ -48,6 +48,8 @@
             this.l7 = new System.Windows.Forms.Label();
             this.l8 = new System.Windows.Forms.Label();
             this.l9 = new System.Windows.Forms.Label();
+            this.lbox1 = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // rb1
@@ -245,11 +247,35 @@
             this.l9.TabIndex = 19;
             this.l9.Text = "=";
             // 
+            // lbox1
+            // 
+            this.lbox1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbox1.FormattingEnabled = true;
+            this.lbox1.ItemHeight = 16;
+            this.lbox1.Location = new System.Drawing.Point(616, 96);
+            this.lbox1.Name = "lbox1";
+            this.lbox1.Size = new System.Drawing.Size(104, 212);
+            this.lbox1.TabIndex = 20;
+            this.lbox1.SelectedIndexChanged += new System.EventHandler(this.lbox1_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(614, 71);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 13);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Yapılan İşlemler";
+            this.label1.Click += new System.EventHandler(this.label1_Click_2);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(748, 329);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbox1);
             this.Controls.Add(this.l9);
             this.Controls.Add(this.l8);
             this.Controls.Add(this.l7);
@@ -300,6 +326,8 @@
         private System.Windows.Forms.Label l7;
         private System.Windows.Forms.Label l8;
         private System.Windows.Forms.Label l9;
+        private System.Windows.Forms.ListBox lbox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

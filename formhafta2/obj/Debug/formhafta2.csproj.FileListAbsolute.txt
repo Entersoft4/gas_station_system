@@ -8,3 +8,13 @@ D:\Belgeler\BİLGİSAYAR PROGRAMCILIĞI\GÖRSEL PROGRAMLAMA\formhafta2\obj\Debug
 D:\Belgeler\BİLGİSAYAR PROGRAMCILIĞI\GÖRSEL PROGRAMLAMA\formhafta2\obj\Debug\formhafta2.csproj.CoreCompileInputs.cache
 D:\Belgeler\BİLGİSAYAR PROGRAMCILIĞI\GÖRSEL PROGRAMLAMA\formhafta2\obj\Debug\formhafta2.exe
 D:\Belgeler\BİLGİSAYAR PROGRAMCILIĞI\GÖRSEL PROGRAMLAMA\formhafta2\obj\Debug\formhafta2.pdb
+D:\Belgeler\gas_station_system\formhafta2\bin\Debug\formhafta2.exe.config
+D:\Belgeler\gas_station_system\formhafta2\bin\Debug\formhafta2.exe
+D:\Belgeler\gas_station_system\formhafta2\bin\Debug\formhafta2.pdb
+D:\Belgeler\gas_station_system\formhafta2\obj\Debug\formhafta2.csproj.AssemblyReference.cache
+D:\Belgeler\gas_station_system\formhafta2\obj\Debug\formhafta2.Form1.resources
+D:\Belgeler\gas_station_system\formhafta2\obj\Debug\formhafta2.Properties.Resources.resources
+D:\Belgeler\gas_station_system\formhafta2\obj\Debug\formhafta2.csproj.GenerateResource.cache
+D:\Belgeler\gas_station_system\formhafta2\obj\Debug\formhafta2.csproj.CoreCompileInputs.cache
+D:\Belgeler\gas_station_system\formhafta2\obj\Debug\formhafta2.exe
+D:\Belgeler\gas_station_system\formhafta2\obj\Debug\formhafta2.pdb
