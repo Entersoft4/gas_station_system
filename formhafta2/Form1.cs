@@ -17,32 +17,10 @@ namespace formhafta2
         public Form1()
         {
             InitializeComponent();
-            //İlk önce lbox>draw mode>owner draw fixed olacak şekilde ayarlanacak.
-            /*lbox1.BackColor = Color.White;
-            lbox1.DrawMode = DrawMode.OwnerDrawFixed;
-            lbox1.DrawItem += new DrawItemEventHandler(lbox1_DrawItem);*/
+            //lbox1 > draw mode > owner darw fixed olması gerekiyor.
+            /*lbox1.DrawMode = DrawMode.OwnerDrawFixed;
+            lbox1.DrawItem += lbox1_DrawItem;*/
         }
-        // + olunca yeşil, - olunca kırmızı yazı olacak şekilde ayarlanacak.
-        /*void lbox1_DrawItem(object sender, DrawItemEventArgs e)
-        {
-            e.DrawBackground();
-            Brush myBrush = Brushes.White;
-
-            lbox1.SelectedValue = ((ListBox)sender).Items[e.Index].ToString()[0];
-            if (lbox1.SelectedValue == "-")
-            {
-                myBrush = Brushes.Red;
-            }
-            else
-            {
-                myBrush = Brushes.Green;
-            }
-
-            e.Graphics.DrawString(((ListBox)sender).Items[e.Index].ToString(),
-            e.Font, myBrush, e.Bounds, StringFormat.GenericDefault);
-
-            e.DrawFocusRectangle();
-        }*/
         double kasa = 50000;
         static double limit=10000;
         double d_benzin = limit, d_dizel = limit, d_lpg = limit;
@@ -62,6 +40,42 @@ namespace formhafta2
         private void label1_Click_2(object sender, EventArgs e)
         {
 
+        }
+
+        private void lbox1_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            /*if(cbox1.SelectedIndex == 0)
+            {
+                e.DrawBackground();
+                Graphics g = e.Graphics;
+
+                // draw the background color you want
+                // mine is set to olive, change it to whatever you want
+                g.FillRectangle(new SolidBrush(Color.Red), e.Bounds);
+
+                // draw the text of the list item, not doing this will only show
+                // the background color
+                // you will need to get the text of item to display
+                g.DrawString((sender as ListBox).Items[e.Index].ToString(), e.Font, new SolidBrush(e.ForeColor), new PointF(e.Bounds.X, e.Bounds.Y));
+
+                e.DrawFocusRectangle();
+            }
+            if(cbox1.SelectedIndex == 1)
+            {
+                e.DrawBackground();
+                Graphics g = e.Graphics;
+
+                // draw the background color you want
+                // mine is set to olive, change it to whatever you want
+                g.FillRectangle(new SolidBrush(Color.Green), e.Bounds);
+
+                // draw the text of the list item, not doing this will only show
+                // the background color
+                // you will need to get the text of item to display
+                g.DrawString((sender as ListBox).Items[e.Index].ToString(), e.Font, new SolidBrush(e.ForeColor), new PointF(e.Bounds.X, e.Bounds.Y));
+
+                e.DrawFocusRectangle();
+            }*/
         }
 
         private void Form1_Load(object sender, EventArgs e)

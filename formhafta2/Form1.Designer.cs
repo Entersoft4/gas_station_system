@@ -256,6 +256,7 @@
             this.lbox1.Name = "lbox1";
             this.lbox1.Size = new System.Drawing.Size(104, 212);
             this.lbox1.TabIndex = 20;
+            this.lbox1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lbox1_DrawItem);
             this.lbox1.SelectedIndexChanged += new System.EventHandler(this.lbox1_SelectedIndexChanged);
             // 
             // label1
